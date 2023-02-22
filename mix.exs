@@ -25,7 +25,8 @@ defmodule HelloWorld.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:simplehttp, "~> 0.5.1"}
+    ]
   end
 end
-

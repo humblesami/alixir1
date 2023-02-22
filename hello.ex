@@ -1,3 +1,4 @@
+import SimpleHttp
 st1 = "\nHello Elixir"
 lista = [3, "yyy", 5];
 #tuple1 = {4, "zzz", 5}
@@ -15,6 +16,10 @@ ans = "\nLength is #{lent}"
 IO.puts(ans)
 
 IO.puts "\nMatch foo => #{String.match?("foo", ~r/foo/)}\n"
+
+{:ok, response} = SimpleHttp.get "http://jsonplaceholder.typicode.com/posts/1"
+
+IO.inspect response
 
 
 #IO.puts tuple1
